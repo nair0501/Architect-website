@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architect website</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css" />
+  <script defer src="js.js"></script>
+</head>
+
+<body>
+  <div class="side-bar-wrapper">
+    <div class="close-menu" onclick="hideSidebar()">
+      <svg
+        class="icon"
+        fill="#000"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 384 512"
+      >
+        <path
+          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+        />
+      </svg>
+    </div>
+    <ul class="side-bar" aria-label="primary" role="list" class="nav-list">
+      <li><a href="#">Main</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contacts</a></li>
+      <li><a href="#">Certifications</a></li>
+
+    </ul>
+  </div>
+  <header class="primary-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#">
+          <img class="logo" src="assets/Group 11.png" alt="digitalproject" />
+        </a>
+       
+        <nav class="primary-navigation" id="primary-navigation">
+          <div class="hamburger-menu" onclick="showSidebar()">
+            <svg
+              class="icon"
+              fill="#000"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+            >
+              <path
+                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+              />
+            </svg>
+          </div>
+          <ul aria-label="primary" role="list" class="nav-list">
+            <li><a href="#home" id="home" >Main</a></li>
+            <li><a href="#gallery" id="gallery" >Gallery</a></li>
+            <li><a href="#projects" id="projects" >Projects</a></li>
+            <li><a href="#contacts" id="contacts" >Contacts</a></li>
+            <li><a href="#certifications" id="certifications" >Certifications</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div id="home" class="main-page">
+    <h1 class="hero-text">
+      Digital
+      Project
+    </h1>
+    <div class="main-page-wrapper">
+      <img class="hero" src="assets/Rectangle 6.png" />
+      <div class="button-wrapper">
+        <button class="view-project-button">
+          View Project
+          <img class="arrow" src="assets/arrow-right-svgrepo-com.svg" />
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div  id="gallery" class="about-us">
+    <div class="about-us-img-wrapper">
+      <img src="assets/Rectangle 8.png" />
+      <img src="assets/Rectangle 9.png" />
+      <img src="assets/Rectangle 10.png" />
+    </div>
+    <div class="about-desc-wrapper">
+      <h1 class="about">About</h1>
+      <p class="description">
+        Your architecture website should include essential pages such as an
+        about page, portfolio page, services page, and contact page. You can
+        also add a blog page to share your expertise and insights with your
+        audience. Each page should provide compelling information about your
+        firm, projects, and services. Architects are professionals trained in
+        the art and science of building design. They develop the concepts for
+        structures and turn those concepts into images and plans, which
+        eventually may become homes, office buildings and other facilities.
+        Their work involves more than just the appearance of a structure
+      </p>
+      <button class="view-project-button">
+        Read More
+        <img class="arrow" src="assets/arrow-right-svgrepo-com.svg" />
+      </button>
+    </div>
+  </div>
+  <div class="pointers">
+    <h1 class="mission-statement">Main Focus/Mission Statement</h1>
+    <div class="focus">
+      <div class="number">
+        1
+        <div class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          efficitur, lectus et facilisis placerat.
+        </div>
+      </div>
+
+      <div class="number">
+        2
+        <div class="desc">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+          efficitur, lectus et facilisis placerat, a auctor est felis ut nisl.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="projects-container">
+    <div class="projects">
+      <h1 class="projects-header">Our Projects</h1>
+      <div class="project-img-wrapper1">
+        <img src="assets/Rectangle 12.png" />
+        <img src="assets/image 15.png" />
+      </div>
+      <div class="project-img-wrapper2">
+        <img src="assets/image 16.png" />
+        <img src="assets/image 17.png" />
+        <img src="assets/image 18.png" />
+      </div>
+    </div>
+    <div class="projects-button">
+      <button class="view-project-button" style="background-color: rgb(62, 62, 62); color: white;">
+        All projects
+        <img class="arrow" src="assets/arrow-right-svgrepo-com.svg" />
+      </button>
+    </div>
+  </div>
+
+  <div class="form-header">
+    <h2>Contact Us</h2>
+  </div>
+  <section class="form">
+    <form action="Do something.html" method="POST">
+      <p class="field">
+        <label for="name" class="label"></label>
+        <input type="text" name="name" placeholder="Name" required />
+      </p>
+      <p class="field">
+        <label for="email" class="label"></label>
+        <input type="email" name="email" placeholder="Email" required />
+      </p>
+      <p class="field">
+        <label for="interests" class="label"></label>
+        <input type="text" name="interests" placeholder="interessted in" />
+      </p>
+      <p class="field">
+        <label for="comments" class="label"></label>
+        <textarea id="comments" name="comments" rows="6" placeholder="Message"></textarea>
+      </p>
+      <button class="view-project-button"
+        style="margin-left: 20px; margin-top: 60px; background-color: rgb(62, 62, 62); color: white;">
+        All projects
+        <img class="arrow" src="assets/arrow-right-svgrepo-com.svg" />
+      </button>
+    </form>
+    <div class="field-img-wrapper">
+      <img class="img-wrapper"src="assets/image 12.png" />
+    </div>
+  </section>
+
+  <footer class="footer">
+      <div class="logo-wrapper" href="#" aria-label="home">
+        <img class="logo" src="assets/Group 11 1.png" alt="Architect">
+      </div>
+      <div>
+      <div class="footer-section-one">
+        <nav class="footer-section-one-nav">
+          <h2 class="nav-headers">Information</h2>
+          <ul class="flow" aria-label="Footer" role="list">
+            <li><a href="#">Main</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">certifications</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+      <div>
+      <div class="footer-section-two">
+        <h2 class="nav-headers">Contacts</h2>
+        <ul class="flow" aria-label="Footer" role="list">
+          <div class="contacts-wrapper">
+            <img class="contacts-svg" src="assets/Vector.svg">
+            <li class="contacts-desc"><a href="#">1234 Sample Street
+                Austin Texas 78704</a></li>
+          </div>
+          <div class="contacts-wrapper">
+            <img class="contacts-svg" src="assets/Group.svg">
+            <li class="contacts-desc"><a href="#">512.333.2222</a></li>
+          </div>
+          <div class="contacts-wrapper">
+            <img class="contacts-svg" src="assets/Group (1).svg">
+            <li class="contacts-desc"><a href="#">sampleemail@gmail.com</a></li>
+          </div>
+        </ul>
+      </div>
+    </div>
+
+     <div>
+      <div class="Socials-wrapper">
+        <h2 class="nav-headers">Social Media</h2>
+        <div class="social-icons-wrapper">
+        <ul class="social-list" role="list" aria-label="social links">
+          <li><a aria-label="facebook" href="#">
+              <a href="#"><img src="assets/facebook.svg" alt="Architect">
+              </a></li>
+          <li><a aria-label="twitter" href="#">
+              <a href="#"><img src="assets/twitter.svg" alt="Architect">
+              </a></li>
+          <li><a aria-label="pinterest" href="#">
+              <a href="#"><img src="assets/pininterest.svg" alt="Architect">
+              </a></li>
+          <li><a aria-label="linkedin" href="#">
+              <a href="#"><img src="assets/Linked In.svg" alt="Architect">
+              </a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <div>
+    <p class="copyright">Copyright 2020 All Rights Reserved</p>
+  </div>
+</body>
+
+</html>
