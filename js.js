@@ -1,3 +1,4 @@
+
 const showSidebar = () => {
   const sidebar = document.querySelector(".side-bar-wrapper");
   const humburgerIcon = document.querySelector(".hamburger-menu");
@@ -13,3 +14,5 @@ const hideSidebar = () => {
   humburgerIcon.style.visibility = "visible";
   sidebar.classList.remove("side-bar-wrapper_visible");
 };
+
+ 
