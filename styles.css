@@ -109,6 +109,13 @@ body {
 .side-bar a {
   text-decoration: none;
   color: #000;
+  box-shadow: inset 0 0 0 0 #474747;
+  padding: 0.5rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.side-bar a:hover {
+  box-shadow: inset 200px 0 0 0 #474747;
+  color: #fff;
 }
 
 .icon {
@@ -139,12 +146,12 @@ body {
 .nav-list a {
   text-decoration: none;
   color: #000;
-  box-shadow: inset 0 0 0 0 #9abfd3;
-  padding: .5rem;
-  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  box-shadow: inset 0 0 0 0 #474747;
+  padding: 0.5rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 .nav-list a:hover {
-  box-shadow: inset 200px 0 0 0 #9abfd3;
+  box-shadow: inset 200px 0 0 0 #474747;
   color: #fff;
 }
 
@@ -192,20 +199,29 @@ body {
 .primary-button {
   color: black;
   background-color: #fff;
+  background: linear-gradient(to right, #474747 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.3s ease-out;
 }
-
-.arrow {
-  position: relative;
-  width: 1.25rem;
-  left: 1.8rem;
-  bottom: -0.3rem;
-  cursor: pointer;
+.primary-button:hover {
+  background-position: left bottom;
+  color: #fff;
 }
 
 .secondary-button {
   background-color: #474747;
   color: #fff;
   margin-top: 2rem;
+  background: linear-gradient(to left, #474747 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.3s ease-out;
+  margin-bottom: 2rem;
+}
+.secondary-button:hover {
+  background-position: left bottom;
+  color: #000;
 }
 
 @media (max-width: 80rem) {
@@ -411,17 +427,17 @@ body {
 
 .project-img-wrapper1 {
   display: flex;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
-    margin-left: auto;
-    justify-items: center;
-    margin-right: auto;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  margin-left: auto;
+  justify-items: center;
+  margin-right: auto;
 }
 .project-img-wrapper2 {
   display: flex;
-    grid-template-columns: 1fr 2fr 2fr;
-    justify-items: center;
-    column-gap: 2rem;
+  grid-template-columns: 1fr 2fr 2fr;
+  justify-items: center;
+  column-gap: 2rem;
 }
 .projects-header {
   color: rgb(116, 116, 116);
@@ -505,7 +521,7 @@ textarea {
   .field-img-wrapper {
     display: flex;
     justify-content: center;
-    margin: 1.875rem 0 1.875rem 0;
+    margin-bottom: 1rem; 
   }
   .img-wrapper {
     width: 90%;
@@ -640,6 +656,6 @@ textarea {
   }
 }
 
-body{
+body {
   animation: transitionIn 0.5s;
 }
