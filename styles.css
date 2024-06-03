@@ -313,11 +313,17 @@ body {
   }
 
   .about-us-img-wrapper {
+    grid-template-columns: 1fr;
     gap: 20px;
     justify-self: center;
-    margin: 2rem 0 0 0;
+    margin: 0;
+    padding: 1.25rem;
+    width: 24rem;
   }
   .about-desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     margin-inline: auto;
     margin-top: 1.875rem;
@@ -327,19 +333,6 @@ body {
     text-align: center;
     margin-bottom: 100px;
     margin-top: 50px;
-  }
-}
-@media (max-width: 50rem) {
-  .about-us-img-wrapper {
-    grid-template-columns: 1fr;
-  }
-  .about-us-img-wrapper img {
-    width: 24rem;
-  }
-  .about-desc-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
   }
 }
 
@@ -525,7 +518,7 @@ textarea {
   .field-img-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
   }
   .img-wrapper {
     width: 90%;
