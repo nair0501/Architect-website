@@ -307,16 +307,16 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
   }
   .about {
     justify-content: center;
   }
   .about-us-img-wrapper {
     grid-template-columns: 1fr;
-    gap: 20px;
     justify-self: center;
     margin: 0;
-    padding: 1.25rem;
   }
   .about-desc-wrapper {
     display: flex;
@@ -335,6 +335,7 @@ body {
   .about-us-img-wrapper img {
     width: 24rem;
     justify-self: center;
+    padding: 1.25rem;
   }
 }
 
